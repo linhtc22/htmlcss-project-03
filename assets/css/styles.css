@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #1ebfc1;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -32,7 +36,7 @@ a {
   color: #fff;
   font-weight: 600;
   font-size: 1.8rem;
-  background: #2ac9bf;
+  background: var(--primary-color);
   text-align: center;
 }
 
@@ -104,8 +108,8 @@ a {
 
   min-width: 108px;
   background: transparent;
-  border: 1px solid #1ebfc1;
-  color: #1ebfc1;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 6px;
@@ -114,7 +118,7 @@ a {
 }
 
 .header-action__signup:hover {
-  background: #1ebfc1;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -166,12 +170,12 @@ a {
   border-radius: 50%;
   box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
   margin-left: 50px;
-  color: #1ebfc1;
+  color: var(--primary-color);
   transition: 0.5s;
 }
 
 .hero__play:hover {
-  background: #1ebfc1;
+  background: var(--primary-color);
   color: #fff;
   scale: 0.9;
 }
