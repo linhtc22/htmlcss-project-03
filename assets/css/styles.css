@@ -177,7 +177,7 @@ a {
 .hero__play:hover {
   background: var(--primary-color);
   color: #fff;
-  scale: 0.9;
+  scale: 1.1;
 }
 
 .hero__media {
@@ -237,7 +237,7 @@ a {
 .hero-course__title {
   margin-left: 16px;
   max-width: 55px;
-  line-height: 1.4;
+  line-height: normal;
 }
 
 .hero-title {
@@ -301,9 +301,65 @@ a {
 }
 
 .hero-groups__img:hover {
-  scale: 0.9;
+  scale: 1.1;
 }
 
 .hero-groups__img + .hero-groups__img {
   margin-left: -7px;
+}
+
+/* Features */
+.features {
+  margin: 65px 0;
+  padding: 65px 0;
+}
+
+.features__sub {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.features__heading {
+  max-width: 577px;
+  margin-top: 18px;
+  font-size: 4.2rem;
+  line-height: 1.33;
+}
+
+.features__desc {
+  max-width: 590px;
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.features__icon {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.features__icon:hover {
+  scale: 1.1;
+}
+
+.features-item__heading {
+  margin-top: 26px;
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.features-item__desc {
+  max-width: 223px;
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.69;
 }
