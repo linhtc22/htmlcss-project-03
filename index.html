@@ -115,19 +115,23 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#!" class="nav__link nav__link--active">Home</a>
+                <a href="/" class="nav__link nav__link--active" title="Home"
+                  >Home</a
+                >
               </li>
               <li class="nav__item">
-                <a href="#!" class="nav__link">Features</a>
+                <a href="#features" class="nav__link" title="Features"
+                  >Features</a
+                >
               </li>
               <li class="nav__item">
-                <a href="#!" class="nav__link">Pricing</a>
+                <a href="#pricing" class="nav__link" title="Pricing">Pricing</a>
               </li>
               <li class="nav__item">
-                <a href="#!" class="nav__link">About</a>
+                <a href="#about" class="nav__link" title="About">About</a>
               </li>
               <li class="nav__item">
-                <a href="#!" class="nav__link">Contact</a>
+                <a href="#contact" class="nav__link" title="Contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -282,7 +286,9 @@
                   />
                 </svg>
               </div>
-              <h3 class="features-item__heading">Live Class</h3>
+              <a href="#!">
+                <h3 class="features-item__heading">Live Class</h3>
+              </a>
               <p class="features-item__desc">
                 We are providing live classes with the best teacher for you
               </p>
@@ -313,7 +319,9 @@
                   <circle cx="63" cy="53" r="3" fill="white" />
                 </svg>
               </div>
-              <h3 class="features-item__heading">Discuss</h3>
+              <a href="#!">
+                <h3 class="features-item__heading">Discuss</h3>
+              </a>
               <p class="features-item__desc">
                 Conversation with teachers or another students about task or any
                 other thing
@@ -342,13 +350,141 @@
                   />
                 </svg>
               </div>
-              <h3 class="features-item__heading">Task</h3>
+              <a href="#!">
+                <h3 class="features-item__heading">Task</h3>
+              </a>
               <p class="features-item__desc">
                 We give every of our students task for gathering knowledge at
                 home
               </p>
             </div>
           </section>
+        </div>
+      </section>
+
+      <!-- Courses -->
+      <section class="courses">
+        <div class="container">
+          <p class="courses__sub">C O U R S E S</p>
+          <h2 class="courses__heading section-heading">Popular Courses</h2>
+          <div class="courses-row">
+            <p class="courses-row__desc section-desc">
+              Check out our most poular courses that suit for you. Here you can
+              find your favourite one.
+            </p>
+            <a href="#!" class="courses-row__view">View All Courses</a>
+          </div>
+
+          <div class="courses__list">
+            <!-- Courses item 1 -->
+            <section class="courses-item">
+              <figure class="courses-item__thumb">
+                <img
+                  src="./assets/img/course-01.png"
+                  alt=""
+                  class="courses-item__img"
+                />
+              </figure>
+
+              <div class="courses-item__body">
+                <h3>
+                  <a href="#!" class="courses-item__heading">Web Design</a>
+                </h3>
+                <p class="courses-item__price">
+                  Fee
+                  <span>$200</span>
+                </p>
+                <p class="courses-item__desc">
+                  Web design basic to higer level
+                </p>
+                <div class="courses-classes">
+                  <p class="courses-classes__desc">40 Classes</p>
+                  <p class="courses-classes__desc">3 Months</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Courses item 2 -->
+            <section class="courses-item">
+              <figure class="courses-item__thumb">
+                <img
+                  src="./assets/img/course-02.png"
+                  alt=""
+                  class="courses-item__img"
+                />
+              </figure>
+
+              <div class="courses-item__body">
+                <h3>
+                  <a href="#!" class="courses-item__heading">Web Development</a>
+                </h3>
+                <p class="courses-item__price">
+                  Fee
+                  <span>$250</span>
+                </p>
+                <p class="courses-item__desc">
+                  Web development basic to higer level
+                </p>
+                <div class="courses-classes">
+                  <p class="courses-classes__desc">30 Classes</p>
+                  <p class="courses-classes__desc">3 Months</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Courses item 3 -->
+            <section class="courses-item">
+              <figure class="courses-item__thumb">
+                <img
+                  src="./assets/img/course-03.png"
+                  alt=""
+                  class="courses-item__img"
+                />
+              </figure>
+
+              <div class="courses-item__body">
+                <h3>
+                  <a href="#!" class="courses-item__heading">Web Design</a>
+                </h3>
+                <p class="courses-item__price">
+                  Fee
+                  <span>$350</span>
+                </p>
+                <p class="courses-item__desc">
+                  UI/UX design basic to higer level
+                </p>
+                <div class="courses-classes">
+                  <p class="courses-classes__desc">50 Classes</p>
+                  <p class="courses-classes__desc">4 Months</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Number -->
+      <section class="number">
+        <div class="container">
+          <div class="number__list">
+            <!-- Number item 1 -->
+            <div class="number-item">
+              <h2 class="number__heading section-heading">100+</h2>
+              <p class="number__desc section-desc">Popular Courses</p>
+            </div>
+
+            <!-- Number item 2 -->
+            <div class="number-item">
+              <h2 class="number__heading section-heading">500+</h2>
+              <p class="number__desc section-desc">Skilled Trainer</p>
+            </div>
+
+            <!-- Number item 3 -->
+            <div class="number-item">
+              <h2 class="number__heading section-heading">1M+</h2>
+              <p class="number__desc section-desc">Student Learning</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
