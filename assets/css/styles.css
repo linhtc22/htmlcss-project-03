@@ -6,6 +6,11 @@
   --primary-color: #1ebfc1;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -66,11 +71,15 @@ a {
 
 /* Header */
 .header {
-  padding: 52px 0 79px;
-  min-height: 100vh;
+  position: sticky;
+  z-index: 1;
+  top: -26px;
+  background: #fff;
+  padding-top: 40px;
 }
 
 .header-top {
+  padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,10 +145,13 @@ a {
 
 /* Hero */
 .hero {
+  padding: 38px 0 79px;
+}
+
+.hero__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
 }
 
 .hero__content {
@@ -167,9 +179,6 @@ a {
 .hero__row {
   display: flex;
   align-items: center;
-}
-
-.hero__row {
   margin-top: 52px;
 }
 
@@ -348,6 +357,7 @@ a {
 }
 
 .features__list {
+  max-width: 1024px;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -419,12 +429,10 @@ a {
 }
 
 .courses__list {
-  margin-top: 79px;
-}
-
-.courses__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 47px;
+  margin-top: 79px;
 }
 
 .courses-item {
@@ -687,6 +695,75 @@ a {
 .ready__desc {
   margin-top: 18px;
   color: #767e7e;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+/* Footer */
+.footer {
+  padding-top: 131px;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 142px;
+}
+
+.footer__heading {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer__list {
+  margin-top: 26px;
+}
+
+.footer__item {
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  color: #535353;
+  font-size: 1.6rem;
+  line-height: normal;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__social {
+  margin-top: 20px;
+}
+
+.footer__social-item {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.footer__social-item a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #535353;
+  transition: 0.5s;
+}
+
+.footer__social-item a:hover {
+  scale: 1.1;
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  padding: 60px 0 50px;
+  color: #b0b5b4;
+  text-align: center;
   font-size: 1.8rem;
   line-height: normal;
 }
