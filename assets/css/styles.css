@@ -378,6 +378,10 @@ a {
 }
 
 /* Courses */
+.courses {
+  margin-bottom: 132px;
+}
+
 .courses__sub {
   color: #767e7e;
   font-size: 1.2rem;
@@ -502,7 +506,7 @@ a {
 
 /* Number */
 .number {
-  padding: 265px 0;
+  padding: 257px 0 132px;
 }
 
 .number__list {
@@ -518,4 +522,141 @@ a {
   text-align: center;
   font-size: 1.8rem;
   line-height: normal;
+}
+
+/* Feedback */
+.feedback {
+  padding: 132px 0 130px;
+}
+.feedback__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-content {
+  margin: 37px 0;
+}
+
+.feedback__desc {
+  margin-top: 27px;
+  max-width: 419px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.feedback-speaker {
+  margin-top: 33px;
+}
+
+.feedback-speaker__name::before {
+  position: relative;
+  left: 0;
+  top: -5px;
+  display: inline-block;
+  content: '';
+  background: #070707;
+  width: 8px;
+  height: 2px;
+}
+
+.feedback-speaker__name {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.feedback-speaker__name span {
+  color: #767e7e;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.feedback__control {
+  display: flex;
+  margin-top: 52px;
+  gap: 30px;
+}
+
+.control__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  outline: none;
+  color: #575f66;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.control__btn:hover {
+  background: #2ac9bf;
+  border-color: #2ac9bf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.control-next-icon {
+  rotate: 180deg;
+}
+
+.feedback-group {
+  position: relative;
+  width: 58%;
+}
+
+.feedback-img {
+  position: absolute;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.feedback-img:hover {
+  scale: 1.1;
+}
+
+.feedback-img__biger {
+  width: 235px;
+  height: 235px;
+  top: 107px;
+  right: 171px;
+}
+
+.feedback-img__large {
+  right: 0;
+  top: 19px;
+  width: 110px;
+  height: 110px;
+}
+
+.feedback-img__medium {
+  top: 0;
+  left: 144px;
+  width: 92px;
+  height: 92px;
+}
+
+.feedback-img__small {
+  width: 78px;
+  height: 78px;
+}
+
+.feedback-img:nth-child(4) {
+  right: 32px;
+  bottom: 29px;
+}
+
+.feedback-img:nth-child(5) {
+  bottom: 0;
+  right: 389px;
+}
+
+.feedback-img:nth-child(6) {
+  left: 0;
+  bottom: 145px;
 }
