@@ -43,6 +43,7 @@ a {
   font-size: 1.8rem;
   background: var(--primary-color);
   text-align: center;
+  transition: 0.25s;
 }
 
 .btn:hover {
@@ -445,6 +446,7 @@ a {
   width: 359px;
   height: 393px;
   opacity: 0.7;
+  overflow: hidden;
   transition: 0.5s;
 }
 
